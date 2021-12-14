@@ -6,7 +6,7 @@ import seaborn as sn
 
 #_______________CHARGEMENT_____________
 # Chargement du fichier csv sous forme de Dataframe
-df = pd.read_csv("diabetes.csv")
+df = pd.read_csv("Pima_Indians_Diabetes.csv")
 print("Colonnes : ", list(df.columns))
 print("Échantillons \n", df.head)
 print("Taille des données", len(df))
