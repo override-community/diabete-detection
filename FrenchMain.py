@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 from sklearn import svm, tree
 from sklearn.cluster import KMeans
 
-
 #_______________CHARGEMENT_____________
 # Chargement du fichier csv sous forme de Dataframe
 df = pd.read_csv("Pima_Indians_Diabetes.csv")
@@ -47,13 +46,11 @@ nbElementClasse = []
 for classe in set(etiquettes) :
   nbElementClasse.append(listeLabels.count(classe))
 
-
 # Affichage de la repartition sous forme de graphe
 dfCount = pd.DataFrame([nbElementClasse])
 graphe = sn.barplot(data = dfCount)
 graphe.set(xlabel = "classes", ylabel = "échantillons")
 plt.figure(figsize=(8,4))
-
 
 #_______________Séparation des données_____________
 # Séparation aléatoire du jeux de données en 2 échantillons : train (70%) / test (30%)
@@ -68,9 +65,7 @@ datasetLabel = list(label_train.values) + list(label_test.values)
 
 # Graphe de repartition de l'ensemble de données après séparation train / test
 dfRepartition = pd.DataFrame(list(zip(datasetLabel, datasetLot)), columns =['etiquettes', 'lot'])
-print(dfRepartition)
 sn.countplot(data = dfRepartition, x = 'etiquettes', hue = 'lot')
-
 
 # ____________________Creations des modeles____________
 svm = svm.SVC()
