@@ -1,0 +1,13 @@
+____SIMPLE VERSION___
+-add visu prediction / real label ?
+
+-add colab version
+
+___ADVANCED VERSION___
+- add repartition graphs
+- print tree
+- print kmeans map
+- add valisation set
+- add cross validation
+- add grid search
+- add learning curves
