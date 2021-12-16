@@ -13,7 +13,7 @@ from sklearn.cluster import KMeans
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
-df = pd.read_csv("Pima_Indians_Diabetes.csv")
+df = pd.read_csv("../../Datasets/Pima_Indians_Diabetes.csv")
 print("Columns : ", list(df.columns), "\n")
 print("Example :\n", df.head, "\n")
 print("Total data lenght :", len(df))
