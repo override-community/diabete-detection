@@ -86,6 +86,7 @@ model.add(Dense(12, activation = 'relu', input_dim = nbFeature))
 model.add(Dense(8, activation = 'relu'))
           
 # add output layer
+# use sofmax activation for depending probability inter class
 model.add(Dense(nbClasse, activation = 'softmax'))
 model.compile(optimizer='rmsprop', loss='mse')
 
@@ -96,8 +97,10 @@ model.compile(optimizer='rmsprop', loss='mse')
 # epochs represente the number of time he will see all data
 model.fit(featureTrain,labelTrain,batch_size=32,epochs=3,validation_data=(featureTest,labelTest))
 
-
+# Predict all data
 prediction = model.predict(featureTest)
+
+# Take the best classe (hight score) for all prediction
 bestPred = [np.argmax(pred) for pred in prediction]
 
 # Calculate accuracy : How many prediction are good ?
@@ -113,4 +116,3 @@ recall = recall_score(bestPred, labelTest)
 f1Score = f1_score(bestPred, labelTest)
 
 print("\nAccuracy:", scores*100, "\nPrecision :", precision*100, "\nRecall", recall*100, "\nF1 score", f1Score*100)
-
