@@ -11,3 +11,4 @@ ___ADVANCED VERSION___
 - add cross validation
 - add grid search
 - add learning curves
+- add confusion matrix
