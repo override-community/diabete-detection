@@ -98,7 +98,7 @@ model.compile(optimizer='rmsprop', loss='mse')
 # Fit the model with the train features and train labels
 # batch_size represente the number of sample it will see at the same time
 # epochs represente the number of time he will see all data
-model.fit(featureTrain,labelTrain,batch_size=32,epochs=3,validation_data=(featureTest,labelTest))
+model.fit(featureTrain,labelTrain,batch_size=32,epochs=3)
 
 # Predict all data
 prediction = model.predict(featureTest)
