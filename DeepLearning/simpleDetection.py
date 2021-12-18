@@ -118,4 +118,4 @@ recall = recall_score(bestPred, labelTest)
 # Relation beetwen precision and recall
 f1Score = f1_score(bestPred, labelTest)
 
-print("\nAccuracy:", scores*100, "\nPrecision :", precision*100, "\nRecall", recall*100, "\nF1 score", f1Score*100)
+print("\nAccuracy:", acc*100, "\nPrecision :", precision*100, "\nRecall", recall*100, "\nF1 score", f1Score*100)
