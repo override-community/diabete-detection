@@ -72,7 +72,7 @@ featureToList = list(featureTrain.values)
 nbFeature = len(featureToList[0]) 
 print("Number of feature for a sample", nbFeature)
 
-
+# Short model with one hidden layer (hidden layer = layer beetween input / output layer)
 # Construct empty model
 model = Sequential() 
 
