@@ -10,6 +10,9 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from keras.models import Sequential
 from keras.layers import Dense 
 
+# Matrice manipulation
+import numpy as np
+
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
