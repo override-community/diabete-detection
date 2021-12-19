@@ -1,0 +1,11 @@
+____SIMPLE VERSION___
+-add test for multi optimizer
+-add save model
+-add colab version
+
+___ADVANCED VERSION___
+- add repartition graphs
+- add valisation set
+- add cross validation
+- add learning curves
+- add confusion matrix
