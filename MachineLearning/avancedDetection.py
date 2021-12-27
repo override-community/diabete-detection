@@ -163,13 +163,13 @@ for model in performances.keys():
   accuracyList.append(performances[model]["accuracy"])
   print(model, performances[model])
 
+ # Plot confusion Matrix
 
 # Print the best model
 maxAcc = max(accuracyList)
 print("\nTHE BEST MODEL IS :", modelList[accuracyList.index(maxAcc)],"\nWITH AN ACCURACY OF :", maxAcc*100, "%")
 
 # Plot all model
-#tree.plot_tree(modelListe["DECISION_TREE"])
 # TODO plot decision tree
 # TODO plot kmeans
 # TODO plot SVM
