@@ -163,7 +163,7 @@ for model in performances.keys():
   accuracyList.append(performances[model]["accuracy"])
   print(model, performances[model])
 
- # Plot confusion Matrix
+ # TODO plot confusion Matrix
 
 # Print the best model
 maxAcc = max(accuracyList)
