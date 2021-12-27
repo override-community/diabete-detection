@@ -3,7 +3,6 @@
 import pandas as pd
 
 # Preparation / Manipulation / Evaluation
-from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 # Models
@@ -13,7 +12,7 @@ from sklearn.cluster import KMeans
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
-df = pd.read_csv("../../Datasets/Pima_Indians_Diabetes.csv")
+df = pd.read_csv("Pima_Indians_Diabetes.csv")
 print("Columns : ", list(df.columns), "\n")
 print("Example :\n", df.head, "\n")
 print("Total data lenght :", len(df))
@@ -28,7 +27,7 @@ print("Data lenght after cleaning :", len(df), "\n")
 #_______________DATA_REPARTITION_____________
 # Features and labels separation (Generaly features are call X and labels Y)
 features = df.copy()
-del features["Outcome"] # delete labels collumns of feature var
+del features["Outcome"] # delete labels columns of feature variables
 
 labels = df["Outcome"]
 
