@@ -14,6 +14,7 @@ from sklearn.cluster import KMeans
 # Load dataset to DataFrame
 df = pd.read_csv("Pima_Indians_Diabetes.csv")
 print("Columns : ", list(df.columns), "\n")
+print(df.info(), "\n")
 print("Example :\n", df.head, "\n")
 print("Total data lenght :", len(df))
 
