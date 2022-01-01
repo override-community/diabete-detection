@@ -5,8 +5,9 @@ ___ADVANCED VERSION___
 - add repartition graphs
 - print tree
 - print kmeans map
-- add valisation set
-- add cross validation
 - add grid search
 - add learning curves
 - add confusion matrix
+
+(add valisation set)
+(add cross validation)
