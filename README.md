@@ -2,7 +2,7 @@
 
 ML :
 Simple version : 100%
-\nAvanced version : 70%
+Avanced version : 70%
 
 Deep :
 Simple version : 50%
