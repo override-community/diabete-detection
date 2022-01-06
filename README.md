@@ -1,7 +1,7 @@
 # DiabeteDetection
 
 ML :
-Simple version : 100%
+Simple version : 90%
 Avanced version : 70%
 
 Deep :
