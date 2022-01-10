@@ -54,8 +54,8 @@ print("Data Repartition :", dataRepartition, "\n")
 
 
 #_______________DATA_SEPARATION_____________
-# Split the dataset into 2 sets : train (70%) / test (30%)
-featureTrain, featureTest, labelTrain, labelTest = train_test_split (features, labels, test_size = 0.30, random_state = 42)
+# Split the dataset into 2 sets : train (80%) / test (20%)
+featureTrain, featureTest, labelTrain, labelTest = train_test_split (features, labels, test_size = 0.20, random_state = 42)
 
 trainRepartition = {}
 testRepartition = {}
