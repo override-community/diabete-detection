@@ -3,12 +3,15 @@
 import pandas as pd
 
 # Preparation / Manipulation / Evaluation
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 # Models
 from sklearn import svm, tree
 from sklearn.cluster import KMeans
 
+# Save
+import  pickle
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
@@ -42,7 +45,10 @@ dataRepartition = {}
 listeLabels = list(labels.values)
 
 for classe in set(labels):
-  dataRepartition[str(classe)] = listeLabels.count(classe)
+  infoClasse = {"pourcent" : 0, "samples" : 0}
+  infoClasse["samples"] = listeLabels.count(classe)
+  infoClasse["pourcent"] = infoClasse["samples"] / len(labels)
+  dataRepartition[str(classe)] = infoClasse
 
 print("Data Repartition :", dataRepartition, "\n")
 
@@ -58,8 +64,17 @@ labelTrainList = list(labelTrain.values)
 labelTestList = list(labelTest.values)
 
 for classe in set(labels):
-  trainRepartition[classe] = labelTrainList.count(classe)
-  testRepartition[classe] = labelTestList.count(classe)
+  # Train
+  infoClasse = {"samples" : 0, "pourcent" : 0}
+  infoClasse["samples"] = labelTrainList.count(classe)
+  infoClasse["pourcent"] = infoClasse["samples"] / len(labelTrainList)
+  trainRepartition[classe] = infoClasse
+
+  # Test
+  infoClasse = {"samples" : 0, "pourcent" : 0}
+  infoClasse["samples"] = labelTestList.count(classe)
+  infoClasse["pourcent"] = infoClasse["samples"] / len(labelTestList)
+  testRepartition[classe] = infoClasse
 
 print("Data Repartition after split :\ntrain :", trainRepartition, "\ntest :", testRepartition, "\n")
 
@@ -126,4 +141,11 @@ for model in performances.keys():
 
 # Print the best model
 maxAcc = max(accuracyList)
-print("\nTHE BEST MODEL IS :", modelList[accuracyList.index(maxAcc)],"\nWITH AN ACCURACY OF :", maxAcc*100, "%")
+print("\nTHE BEST ACCURACY MODEL IS :", modelList[accuracyList.index(maxAcc)],"\nWITH AN ACCURACY OF :", maxAcc*100, "%")
+
+#____________________SAVE____________
+with open(modelList[accuracyList.index(maxAcc)] + ".pkl", 'wb')  as saveFile:
+  pickle.dump(modelListe[modelList[accuracyList.index(maxAcc)]],  saveFile)
+  
+#____________________LOAD____________
+# pickle.load("name_of_your_file.pkl")
