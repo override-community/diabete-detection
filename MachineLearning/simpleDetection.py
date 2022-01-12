@@ -2,6 +2,9 @@
 # Load dataset
 import pandas as pd
 
+# Array manipulation
+import numpy as np
+
 # Preparation / Manipulation / Evaluation
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
@@ -35,10 +38,13 @@ del features["Outcome"] # delete labels columns of feature variables
 
 labels = df["Outcome"]
 
-# Count number of classes
-nbClasse = len(set(labels))
-print("Available classes :", nbClasse, "->", set(labels))
+# Count number of classe
+nbClasse = np.array([labels[0]]).shape[0]
+print("Available class :", nbClasse)
 
+# Count number of possible values
+nbValues = len(set(labels))
+print("Available values :", nbValues, "->", set(labels))
 
 # count the number of element by classe
 dataRepartition = {}
@@ -89,7 +95,7 @@ modelListe["SVM"] = svm.SVC()
 modelListe["DECISION_TREE"] = tree.DecisionTreeClassifier()
 
 # Kmeans
-modelListe["KMEANS"] = KMeans(n_clusters=nbClasse)
+modelListe["KMEANS"] = KMeans(n_clusters=nbValues)
 
 
 #____________________TRAINING____________
