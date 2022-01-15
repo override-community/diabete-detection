@@ -3,4 +3,3 @@ scikit-learn
 numpy
 keras
 seaborn
-six
