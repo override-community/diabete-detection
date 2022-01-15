@@ -110,11 +110,11 @@ parameterTree = {'bootstrap': [True],
 				'min_samples_leaf': [1, 2, 4],
 				'min_samples_split': [3, 5,],
 				'n_estimators': [200, 400, 600, 800]}
-# TODO describes parameters of mlogistic regression
+# TODO - describes parameters of mlogistic regression
 parameterLR = {"C":np.logspace(-3,3,20),
 				"penalty":["l2"]}
 
-# TODO describes parameters of gradient boosting
+# TODO - describes parameters of gradient boosting
 parameterGB  = {"learning_rate": [0.01, 0.025, 0.05, 0.075, 0.1, 0.15, 0.2],
 				"min_samples_split": np.linspace(0.1, 0.5, 12),
 				"min_samples_leaf": np.linspace(0.1, 0.5, 12),
@@ -125,7 +125,7 @@ parameterGB  = {"learning_rate": [0.01, 0.025, 0.05, 0.075, 0.1, 0.15, 0.2],
 				"n_estimators":[300, 500]
     }
 
-# TODO describes parameters of Kmeans
+# TODO - describes parameters of Kmeans
 
 # ____________________MODELES_CREATION____________
 modelListe = {}
@@ -198,7 +198,7 @@ for model in performances.keys():
 	print(model, performances[model])
 
 
-# TODO K-Fold Cross-Validation
+# TODO - K-Fold Cross-Validation
 names = []
 scores = []
 for name, model in models:
