@@ -56,10 +56,10 @@ dataRepartition = {}
 listeLabels = list(labels.values)
 
 for classe in set(labels):
-  infoClasse = {"pourcent" : 0, "samples" : 0}
-  infoClasse["samples"] = listeLabels.count(classe)
-  infoClasse["pourcent"] = infoClasse["samples"] / len(labels)
-  dataRepartition[str(classe)] = infoClasse
+    infoClasse = {"pourcent" : 0, "samples" : 0}
+    infoClasse["samples"] = listeLabels.count(classe)
+    infoClasse["pourcent"] = infoClasse["samples"] / len(labels)
+    dataRepartition[str(classe)] = infoClasse
 
 print("Data Repartition :", dataRepartition, "\n")
 
@@ -75,17 +75,17 @@ labelTrainList = list(labelTrain.values)
 labelTestList = list(labelTest.values)
 
 for classe in set(labels):
-  # Train
-  infoClasse = {"samples" : 0, "pourcent" : 0}
-  infoClasse["samples"] = labelTrainList.count(classe)
-  infoClasse["pourcent"] = infoClasse["samples"] / len(labelTrainList)
-  trainRepartition[classe] = infoClasse
+    # Train
+    infoClasse = {"samples" : 0, "pourcent" : 0}
+    infoClasse["samples"] = labelTrainList.count(classe)
+    infoClasse["pourcent"] = infoClasse["samples"] / len(labelTrainList)
+    trainRepartition[classe] = infoClasse
 
-  # Test
-  infoClasse = {"samples" : 0, "pourcent" : 0}
-  infoClasse["samples"] = labelTestList.count(classe)
-  infoClasse["pourcent"] = infoClasse["samples"] / len(labelTestList)
-  testRepartition[classe] = infoClasse
+    # Test
+    infoClasse = {"samples" : 0, "pourcent" : 0}
+    infoClasse["samples"] = labelTestList.count(classe)
+    infoClasse["pourcent"] = infoClasse["samples"] / len(labelTestList)
+    testRepartition[classe] = infoClasse
 
 print("Data Repartition after split :\ntrain :", trainRepartition, "\ntest :", testRepartition, "\n")
 
