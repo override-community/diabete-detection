@@ -146,13 +146,9 @@ for model in performances.keys():
     accuracyList.append(performances[model]["accuracy"])
     print(model, performances[model])
 
-
-
 # Print the best model
 maxAcc = max(accuracyList)
 print("\nTHE BEST ACCURACY MODEL IS :", models[accuracyList.index(maxAcc)],"\nWITH AN ACCURACY OF :", maxAcc*100, "%")
-
-
 
 #____________________SAVE____________
 with open(model[accuracyList.index(maxAcc)] + ".pkl", 'wb')  as saveFile:
