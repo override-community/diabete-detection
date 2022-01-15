@@ -10,15 +10,20 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 # Models
-from sklearn import svm, tree
-from sklearn.cluster import KMeans
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 
 # Save
 import  pickle
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
-df = pd.read_csv("Pima_Indians_Diabetes.csv")
+df = pd.read_csv("../Datasets/Pima_Indians_Diabetes.csv")
 print("Columns : ", list(df.columns), "\n")
 print(df.info(), "\n")
 print("Example :\n", df.head, "\n")
@@ -86,72 +91,72 @@ print("Data Repartition after split :\ntrain :", trainRepartition, "\ntest :", t
 
 
 # ____________________MODELES_CREATION____________
-modelListe = {}
-
-# SVM
-modelListe["SVM"] = svm.SVC()
-
-# Arbre décision
-modelListe["DECISION_TREE"] = tree.DecisionTreeClassifier()
-
-# Kmeans
-modelListe["KMEANS"] = KMeans(n_clusters=nbValues)
-
+# let's use basics models withouts any parameters befor moving to advanced machine learnin in order to tune them.
+models = []
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('SVC', SVC()))
+models.append(('LR', LogisticRegression(max_iter=500)))
+models.append(('DT', DecisionTreeClassifier()))
+models.append(('GNB', GaussianNB()))
+models.append(('RF', RandomForestClassifier()))
+models.append(('GB', GradientBoostingClassifier()))
 
 #____________________TRAINING____________
 # Fit all model of the list with the train features and train labels
-modelList = list(modelListe.keys())
 
-for model in modelList :
-  modelListe[model].fit(featureTrain, labelTrain)
+for _, model in models :
+    model.fit(featureTrain, labelTrain)
 
 # ____________________EVALUATION____________
 
 performances = {}
 
 # For all model of the list
-for model in modelList :
+for _, model in models :
 
-  # Prediction of all test elements
-  predictions = modelListe[model].predict(featureTest)
+    # Prediction of all test elements
+    predictions = model.predict(featureTest)
 
-  # Evaluation of the model by comparing prediction and real labels
-  perfModel = {"accuracy" : 0.0, "precision" : 0.0, "recall" : 0.0, "f1-score" : 0.0}
+    # Evaluation of the model by comparing prediction and real labels
+    perfModel = {"accuracy" : 0.0, "precision" : 0.0, "recall" : 0.0, "f1-score" : 0.0}
 
-  # Calculate accuracy : How many prediction are good ?
-  acc = accuracy_score(predictions, labelTest)
+    # Calculate accuracy : How many prediction are good ?
+    acc = accuracy_score(predictions, labelTest)
 
-  # Calculate precision : Number of correct prediction for this class / total of predictions for this class
-  precision = precision_score(predictions, labelTest)
+    # Calculate precision : Number of correct prediction for this class / total of predictions for this class
+    precision = precision_score(predictions, labelTest)
 
-  # Calculate recall : Number of correct prediction  / total element of this class
-  recall = recall_score(predictions, labelTest)
+    # Calculate recall : Number of correct prediction  / total element of this class
+    recall = recall_score(predictions, labelTest)
 
-  # Relation beetwen precision and recall
-  f1Score = f1_score(predictions, labelTest)
+    # Relation beetwen precision and recall
+    f1Score = f1_score(predictions, labelTest)
 
-  perfModel["accuracy"] = acc
-  perfModel["precision"] = precision
-  perfModel["recall"] = recall
-  perfModel["f1-score"] = f1Score
+    perfModel["accuracy"] = round(acc, 3)
+    perfModel["precision"] = round(precision, 3)
+    perfModel["recall"] = round(recall, 3)
+    perfModel["f1-score"] = round(f1Score, 3)
 
-  performances[model] = perfModel
+    performances[_] = perfModel
 
 # Show performance of all models
 accuracyList = []
 
 for model in performances.keys():
-  accuracyList.append(performances[model]["accuracy"])
-  print(model, performances[model])
+    accuracyList.append(performances[model]["accuracy"])
+    print(model, performances[model])
+
 
 
 # Print the best model
 maxAcc = max(accuracyList)
-print("\nTHE BEST ACCURACY MODEL IS :", modelList[accuracyList.index(maxAcc)],"\nWITH AN ACCURACY OF :", maxAcc*100, "%")
+print("\nTHE BEST ACCURACY MODEL IS :", models[accuracyList.index(maxAcc)],"\nWITH AN ACCURACY OF :", maxAcc*100, "%")
+
+
 
 #____________________SAVE____________
-with open(modelList[accuracyList.index(maxAcc)] + ".pkl", 'wb')  as saveFile:
-  pickle.dump(modelListe[modelList[accuracyList.index(maxAcc)]],  saveFile)
+with open(model[accuracyList.index(maxAcc)] + ".pkl", 'wb')  as saveFile:
+    pickle.dump(model[accuracyList.index(maxAcc)],  saveFile)
   
 #____________________LOAD____________
 # pickle.load("name_of_your_file.pkl")

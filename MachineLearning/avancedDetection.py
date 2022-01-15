@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore', 'Solver terminated early.*')
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
-df = pd.read_csv("Pima_Indians_Diabetes.csv")
+df = pd.read_csv("../Datasets/Pima_Indians_Diabetes.csv")
 print("Columns : ", list(df.columns), "\n")
 print(df.info(), "\n")
 print("Example :\n", df.head, "\n")
@@ -45,11 +45,11 @@ nbClasse = len(set(labels))
 print("Available classes :", nbClasse, "->", set(labels))
 
 # count the number of element by classe
-listeLabels = list(labels.values) 
+listeLabels = list(labels.values)
 nbElementClasse = []
 
-for classe in set(labels) :
-  nbElementClasse.append(listeLabels.count(classe))
+for classe in set(labels):
+	nbElementClasse.append(listeLabels.count(classe))
 
 
 # Show a repartition graph
@@ -59,11 +59,11 @@ graphe.set(xlabel = "classes", ylabel = "échantillons")
 plt.figure(figsize=(8,4))
 
 #_______________DATA_SEPARATION_____________
-# Split the dataset into 2 sets : train (70%) / test (30%)
+# Split the dataset into 2 sets : train (80%) / test (20%)
 # ============================== TODO INCLUDE VALIDATION SET
-featureTrain, featureTest, labelTrain, labelTest = train_test_split (features, labels, test_size = 0.30, random_state = 42)
+featureTrain, featureTest, labelTrain, labelTest = train_test_split (features, labels, test_size = 0.2, random_state = 42)
 
-# Creation of 2 lists to join each label with his set (Train / Test) 
+# Creation of 2 lists to join each label with his set (Train / Test)
 trainIndicator = ["Train" for element in labelTrain]
 testIndicator = ["Test" for element in labelTest]
 datasetIndicator = trainIndicator + testIndicator
@@ -82,7 +82,7 @@ sn.countplot(data = dfRepartition, x = 'labels', hue = 'set')
 # Kernel: type of kernel : linear, poly, rbf, sigmoid, precomputed
 # Max_Iter: It is the maximum number of iterations for the solver
 parameterSVM = [{
-  'kernel': ['linear', 'poly', 'rbf', 'sigmoid'], 
+  'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
   'C': [1, 10, 50, 100, 250, 500, 1000],
   'max_iter': [10, 50, 100, 250]
   }]
@@ -93,7 +93,7 @@ parameterSVM = [{
 # mini_simple_split : The minimum number of samples required to split an internal node
 # mini_samples_leaf : The minimum number of samples required to be at a leaf node
 parameterTree = [{
-  'criterion': ['gini', 'entropy'], 
+  'criterion': ['gini', 'entropy'],
   }]
 
 
@@ -104,7 +104,7 @@ modelListe = {}
 modelListe["SVM"] = GridSearchCV(svm.SVC(), parameterSVM, scoring='accuracy', verbose=0)
 
 # Arbre décision
-modelListe["DECISION_TREE"] = GridSearchCV(tree.DecisionTreeClassifier(), parameterTree, scoring='accuracy', verbose=0)
+modelListe["DECISION_TREE"] = GridSearchCV(tree.DecisionTreeClassifier(),parameterTree, scoring='accuracy', verbose=0)
 
 # Kmeans
 modelListe["KMEANS"] = KMeans(n_clusters=nbClasse)
@@ -114,14 +114,14 @@ modelListe["KMEANS"] = KMeans(n_clusters=nbClasse)
 # Fit all model of the list with the train features and train labels
 modelList = list(modelListe.keys())
 
-for model in modelListe.keys() :
-  curve = modelListe[model].fit(featureTrain, labelTrain)
+for model in modelListe.keys():
+    curve = modelListe[model].fit(featureTrain, labelTrain)
 
-  # TODO Plot all learning curve
+	# TODO: Plot all learning curve
 
-  # If model use gridSearch
-  if type(modelListe[model]) ==  type(GridSearchCV(svm.SVC(), parameterSVM)) :
-    print(model, "best params:", modelListe[model].best_params_, "\n")
+	# If model use gridSearch
+    if type(modelListe[model]) ==  type(GridSearchCV(svm.SVC(), parameterSVM)) :
+	    print(model, "best params:", modelListe[model].best_params_, "\n")
 
 
 # ____________________EVALUATION____________
@@ -129,41 +129,71 @@ for model in modelListe.keys() :
 performances = {}
 
 # For all model of the list
-for model in modelList :
+for model in modelList:
 
-  # Prediction of all test elements
-  predictions = modelListe[model].predict(featureTest)
+	# Prediction of all test elements
+	predictions = modelListe[model].predict(featureTest)
 
-  # Evaluation of the model by comparing prediction and real labels
-  perfModel = {"accuracy" : 0.0, "precision" : 0.0, "recall" : 0.0, "f1-score" : 0.0}
+	# Evaluation of the model by comparing prediction and real labels
+	perfModel = {"accuracy" : 0.0, "precision" : 0.0, "recall" : 0.0, "f1-score" : 0.0}
 
-  # Calculate accuracy : How many prediction are good ?
-  acc = accuracy_score(predictions, labelTest)
+	# Calculate accuracy : How many prediction are good ?
+	acc = accuracy_score(predictions, labelTest)
 
-  # Calculate precision : Number of correct prediction for this class / total of predictions for this class
-  precision = precision_score(predictions, labelTest)
+	# Calculate precision : Number of correct prediction for this class / total of predictions for this class
+	precision = precision_score(predictions, labelTest)
 
-  # Calculate recall : Number of correct prediction  / total element of this class
-  recall = recall_score(predictions, labelTest)
+	# Calculate recall : Number of correct prediction  / total element of this class
+	recall = recall_score(predictions, labelTest)
 
-  # Relation beetwen precision and recall
-  f1Score = f1_score(predictions, labelTest)
+	# Relation beetwen precision and recall
+	f1Score = f1_score(predictions, labelTest)
 
-  perfModel["accuracy"] = acc
-  perfModel["precision"] = precision
-  perfModel["recall"] = recall
-  perfModel["f1-score"] = f1Score
+	perfModel["accuracy"] = acc
+	perfModel["precision"] = precision
+	perfModel["recall"] = recall
+	perfModel["f1-score"] = f1Score
 
-  performances[model] = perfModel
+	performances[model] = perfModel
 
 # Show performance of all models
 accuracyList = []
 
 for model in performances.keys():
-  accuracyList.append(performances[model]["accuracy"])
-  print(model, performances[model])
+	accuracyList.append(performances[model]["accuracy"])
+	print(model, performances[model])
 
- # TODO plot confusion Matrix
+# featureTrain, featureTest, labelTrain, labelTest
+names = []
+scores = []
+
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+
+models = []
+models.append(('KNN', KNeighborsClassifier()))
+models.append(('SVC', SVC()))
+models.append(('LR', LogisticRegression()))
+models.append(('DT', DecisionTreeClassifier()))
+models.append(('GNB', GaussianNB()))
+models.append(('RF', RandomForestClassifier()))
+models.append(('GB', GradientBoostingClassifier()))
+
+print("\n\n", "___________________ performance ___________________")
+for name, model in models:
+    model.fit(featureTrain, labelTrain)
+    y_pred = model.predict(featureTest)
+    scores.append(accuracy_score(labelTest, y_pred))
+    names.append(name)
+tr_split = pd.DataFrame({'Name': names, 'Score': scores})
+print(tr_split)
+print("\n\n", "___________________ performance ___________________")
+# TODO plot confusion Matrix
 
 # Print the best model
 maxAcc = max(accuracyList)
