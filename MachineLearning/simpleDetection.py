@@ -14,7 +14,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 
@@ -97,7 +96,6 @@ models.append(('KNN', KNeighborsClassifier()))
 models.append(('SVC', SVC()))
 models.append(('LR', LogisticRegression(max_iter=500)))
 models.append(('DT', DecisionTreeClassifier()))
-models.append(('GNB', GaussianNB()))
 models.append(('RF', RandomForestClassifier()))
 models.append(('GB', GradientBoostingClassifier()))
 
