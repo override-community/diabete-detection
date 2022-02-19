@@ -2,9 +2,6 @@
 # Load dataset
 import pandas as pd
 
-# Array manipulation
-import numpy as np
-
 # Preparation / Manipulation / Evaluation
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
@@ -24,6 +21,7 @@ import  pickle
 # Load dataset to DataFrame
 github_path = "/workspaces/DiabeteDetection/Datasets/Pima_Indians_Diabetes.csv"
 local_path = "../Datasets/Pima_Indians_Diabetes.csv"
+
 df = pd.read_csv(github_path)
 print("Columns : ", list(df.columns), "\n")
 print(df.info(), "\n")
