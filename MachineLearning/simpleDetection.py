@@ -22,7 +22,9 @@ import  pickle
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
-df = pd.read_csv("../Datasets/Pima_Indians_Diabetes.csv")
+github_path = "/workspaces/DiabeteDetection/Datasets/Pima_Indians_Diabetes.csv"
+local_path = "../Datasets/Pima_Indians_Diabetes.csv"
+df = pd.read_csv(github_path)
 print("Columns : ", list(df.columns), "\n")
 print(df.info(), "\n")
 print("Example :\n", df.head, "\n")
@@ -42,11 +44,11 @@ del features["Outcome"] # delete labels columns of feature variables
 
 labels = df["Outcome"]
 
-# Count number of classe
-nbClasse = np.array([labels[0]]).shape[0]
-print("Available class :", nbClasse)
+# Number target variable (label)
+nbClasse = 1
+print("Available target :", nbClasse)
 
-# Count number of possible values
+# Count of classe in target variable
 nbValues = len(set(labels))
 print("Available values :", nbValues, "->", set(labels))
 
@@ -102,7 +104,7 @@ models.append(('GB', GradientBoostingClassifier()))
 #____________________TRAINING____________
 # Fit all model of the list with the train features and train labels
 
-for _, model in models :
+for model_name, model in models :
     model.fit(featureTrain, labelTrain)
 
 # ____________________EVALUATION____________
@@ -110,7 +112,7 @@ for _, model in models :
 performances = {}
 
 # For all model of the list
-for _, model in models :
+for model_name, model in models :
 
     # Prediction of all test elements
     predictions = model.predict(featureTest)
@@ -135,7 +137,7 @@ for _, model in models :
     perfModel["recall"] = round(recall, 3)
     perfModel["f1-score"] = round(f1Score, 3)
 
-    performances[_] = perfModel
+    performances[model_name] = perfModel
 
 # Show performance of all models
 accuracyList = []
