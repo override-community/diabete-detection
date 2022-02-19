@@ -44,13 +44,9 @@ del features["Outcome"] # delete labels columns of feature variables
 
 labels = df["Outcome"]
 
-# Number target variable (label)
-nbClasse = 1
-print("Available target :", nbClasse)
-
 # Count of classe in target variable
-nbValues = len(set(labels))
-print("Available values :", nbValues, "->", set(labels))
+nbClasse = len(set(labels))
+print("Available values :", nbClasse, "->", set(labels))
 
 # count the number of element by classe
 dataRepartition = {}

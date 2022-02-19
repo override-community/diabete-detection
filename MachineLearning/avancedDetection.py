@@ -30,7 +30,10 @@ warnings.filterwarnings('ignore', 'Solver terminated early.*')
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
-df = pd.read_csv("../Datasets/Pima_Indians_Diabetes.csv")
+github_path = "/workspaces/DiabeteDetection/Datasets/Pima_Indians_Diabetes.csv"
+local_path = "../Datasets/Pima_Indians_Diabetes.csv"
+df = pd.read_csv(github_path)
+
 print("Columns : ", list(df.columns), "\n")
 print(df.info(), "\n")
 print("Example :\n", df.head, "\n")
@@ -41,7 +44,6 @@ print("Total data lenght :", len(df))
 # Remove all empty cells by removing the row
 df.dropna(inplace=True)
 print("Data lenght after cleaning :", len(df), "\n")
-
 
 #_______________DATA_REPARTITION_____________
 # Features and labels separation (Generaly features are call X and labels Y)
