@@ -11,7 +11,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 
 # Save
@@ -39,7 +38,7 @@ print("Data lenght after cleaning :", len(df), "\n")
 # Features and labels separation (Generaly features are call X and labels Y)
 features = df.copy()
 del features["Outcome"] # delete labels columns of feature variables
-
+print("Available features: ", features.shape[1])
 labels = df["Outcome"]
 
 # Count of classe in target variable
@@ -92,7 +91,6 @@ models.append(('KNN', KNeighborsClassifier()))
 models.append(('SVC', SVC()))
 models.append(('LR', LogisticRegression(max_iter=500)))
 models.append(('DT', DecisionTreeClassifier()))
-models.append(('RF', RandomForestClassifier()))
 models.append(('GB', GradientBoostingClassifier()))
 
 #____________________TRAINING____________
@@ -145,7 +143,7 @@ maxAcc = max(accuracyList)
 print("\nTHE BEST ACCURACY MODEL IS :", models[accuracyList.index(maxAcc)],"\nWITH AN ACCURACY OF :", maxAcc*100, "%")
 
 #____________________SAVE____________
-with open(model[accuracyList.index(maxAcc)] + ".pkl", 'wb')  as saveFile:
+with open(str(models[accuracyList.index(maxAcc)]) + ".pkl", 'wb')  as saveFile:
     pickle.dump(model[accuracyList.index(maxAcc)],  saveFile)
   
 #____________________LOAD____________
