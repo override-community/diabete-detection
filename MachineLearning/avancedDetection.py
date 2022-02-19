@@ -1,6 +1,8 @@
 #_______________IMPORTS_____________
+
 # Load dataset
 from cProfile import label
+from distutils.log import error
 import pandas as pd
 import numpy as np
 
@@ -73,7 +75,6 @@ graphe = sn.barplot(data = dfCount)
 graphe.set(xlabel = "classes", ylabel = "échantillons")
 plt.figure(figsize=(8,4))
 
-
 # ____________________SELECT BEST HYPER PARAMS____________
 
 # SVM HYPER PARAMS
@@ -129,7 +130,11 @@ names = []
 scores = []
 for name, model in models:
 	kfold = KFold(n_splits=5, random_state=123, shuffle=True)
-	print("train", 100- (100/5), "% test", 100/5,"%")
+	# enumerate splits
+	for train, test in kfold.split(features):
+		print('train: %s, test: %s' % (len(train), len(test)))
+
+  # TRAIN AND VALIDATE WITH THIS SPLIT
 	score = cross_val_score(model, features, labels, cv=kfold, scoring='accuracy').mean()
 	# get metrics
 	names.append(name)
@@ -144,3 +149,5 @@ print('\n\n CROSSVAL_METRICS',kf_cross_val,'\n \n')
 # TODO plot decision tree
 # TODO plot kmeans
 # TODO plot SVM
+# TODO Explain Crossval
+# TODO Add f1_score, for every iter
