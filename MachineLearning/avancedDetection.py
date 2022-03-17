@@ -1,7 +1,6 @@
 #_______________IMPORTS_____________
 
 # Load dataset
-from cProfile import label
 from distutils.log import error
 import pandas as pd
 import numpy as np
