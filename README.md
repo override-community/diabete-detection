@@ -4,7 +4,7 @@
 
 
 <h2><u> Contexte : </u></h2>
-#TODO ajouter niveau projet
+<image src="Ressource/easy.png">
 
 Ce projet a pour but de vous faire découvrir le domaine du machine learning à travers un exercice simple : la détection automatique du diabète.
 Il est donc dédié aux débutants et à toute personne souhaitant découvrir ce domaine.
