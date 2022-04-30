@@ -1,6 +1,6 @@
 <h1> Introduction au machine learning : détection du diabète </h1>
 
-#TODO proposer les langues
+<b><center> LANGUES : [ENGLISH] / [ESPAÑOL] </center></b>
 
 
 <h2><u> Contexte : </u></h2>
