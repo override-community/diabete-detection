@@ -1,6 +1,6 @@
 <h1> Introduction au machine learning : détection du diabète </h1>
 
-<b><center> LANGUES : [ENGLISH] / [ESPAÑOL] </center></b>
+<h2><center> LANGUES : [ENGLISH] / [ESPAÑOL] </h2></center>
 
 
 <h2><u> Contexte : </u></h2>
@@ -13,7 +13,8 @@ Donc si jamais vous êtes déjà expérimenté dans le domaine, n'hésitez pas �
 
 
 <h2><u>Architecture du projet :</h2></u>
-Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> contenant notre démarche ainsi que des explications supplémentaires sur le domaine.
+Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> contenant notre démarche ainsi que des explications supplémentaires sur le domaine. <br>
+
 <ul>
 <li> Le dossier dataset: <br>
   contient le jeu de données ... provenant de kaggle (mettre lien)</li>
