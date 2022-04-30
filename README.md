@@ -13,7 +13,7 @@ Donc si jamais vous êtes déjà expérimenté dans le domaine, n'hésitez pas �
 
 
 <h2><u>Architecture du projet :</h2></u>
-Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> contenant notre démarche ainsi que des explications supplémentaires sur le domaine. <br>
+Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> contenant notre démarche ainsi que des explications supplémentaires sur le domaine. <br><br>
 
 <ul>
 <li> Le dossier dataset: <br>
