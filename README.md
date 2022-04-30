@@ -1,4 +1,4 @@
-<h1> Introduction au machine learning : détection du diabète </h1>
+<h1 align="center"> Introduction au machine learning : détection du diabète </h1>
 
 <h3 align="center"> LANGUES : [ENGLISH] / [ESPAÑOL] </h3>
 
