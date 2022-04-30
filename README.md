@@ -24,5 +24,6 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 <li> Le dossier deep learning : <br>
   contient aussi un fichier d'installation ainsi qu'un code traitant la problématique d'un point de vue deep. </li>
 
+</ul>
 
 <h2><u> Installation / Execution : </h2></u>
