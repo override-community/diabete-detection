@@ -30,6 +30,6 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 <h2><u> Installation / Execution : </h2></u>
   
 <h2><u> Réseaux : </h2></u>
-<a href="https://discord.gg/pgEUk9xVKe"> <image src="Ressource/discord_icon.png" width=50 height=50> </a>
-<a href =""> <image src="Ressource/medium_icon.png" width=50 height=50> </a>
-<a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> <image src="Ressource/youtube_icon.png" width=50 height=50> </a>
+<a href="https://discord.gg/pgEUk9xVKe"> <image src="Ressource/discord_icon.png" width=25 height=25> </a><br>
+<a href =""> <image src="Ressource/medium_icon.png" width=25 height=25> </a> <i> En construction </i> <br>
+<a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> <image src="Ressource/youtube_icon.png" width=25 height=50> </a><br>
