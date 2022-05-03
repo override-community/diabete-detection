@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 
-
-<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
-    <foreignObject width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <style>
-                a {
-                    text-decoration: none;
-                }
-            </style>
-        </div>
-    </foreignObject>
-</svg>
-
 <html>
 <h1 align="center"> Introduction au machine learning : détection du diabète </h1>
 
