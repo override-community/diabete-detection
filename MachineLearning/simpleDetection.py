@@ -133,7 +133,7 @@ for model_name, model in models :
     performances[model_name] = perfModel
 
 # Show performance of all models
-print("Models performances :\n")
+print("\nModels performances :")
 
 accuracyList = []
 
