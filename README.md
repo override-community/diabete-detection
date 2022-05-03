@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<head> <link rel="stylesheet" type="text/css" href="style.css"> </head>
+
+<style>
+a {
+    text-decoration: none;
+}
+</style>
 
 <html>
 <h1 align="center"> Introduction au machine learning : détection du diabète </h1>
