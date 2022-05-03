@@ -1,4 +1,4 @@
-<head> <link rel="stylesheet" type="text/css" href="Ressource/style.css"> </head>
+<head> <link rel="stylesheet" type="text/css" href="https://github.com/Fab16BSB/DiabeteDetection/blob/8212df3f67bdc510b3b5a1e1493839930f8dac1f/style.css"> </head>
 
 <h1 align="center"> Introduction au machine learning : détection du diabète </h1>
 
