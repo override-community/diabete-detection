@@ -17,7 +17,7 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 
 <ul>
 <li> Le dossier dataset: <br>
-  contient le jeu de données ... provenant de kaggle (mettre lien)</li>
+  contient le jeu de données <url src ="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database"> "Pima_Indians_Diabetes"</url> provenant de kaggle</li>
 
 <li> Le dossier machine learning : <br>
   contenant un code traitant la problématique d'un point de vue machine learning ainsi qu'un fichier contenant les installations requises. </li>
