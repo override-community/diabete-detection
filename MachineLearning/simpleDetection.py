@@ -62,26 +62,27 @@ print("Data Repartition :", dataRepartition, "\n")
 # Split the dataset into 2 sets : train (80%) / test (20%)
 featureTrain, featureTest, labelTrain, labelTest = train_test_split (features, labels, test_size = 0.20, random_state = 42)
 
-trainRepartition = {}
-testRepartition = {}
-
 labelTrainList = list(labelTrain.values)
 labelTestList = list(labelTest.values)
 
-for classe in set(labels):
-    # Train
-    infoClasse = {"samples" : 0, "pourcent" : 0}
-    infoClasse["samples"] = labelTrainList.count(classe)
-    infoClasse["pourcent"] = infoClasse["samples"] / len(labelTrainList)
-    trainRepartition[classe] = infoClasse
+print("Data Repartition after split :")
 
-    # Test
-    infoClasse = {"samples" : 0, "pourcent" : 0}
-    infoClasse["samples"] = labelTestList.count(classe)
-    infoClasse["pourcent"] = infoClasse["samples"] / len(labelTestList)
-    testRepartition[classe] = infoClasse
+for i in range(0,2): # For Train / Test
 
-print("Data Repartition after split :\ntrain :", trainRepartition, "\ntest :", testRepartition, "\n")
+  infoDico = {}
+
+  for classe in set(labels): # For each class
+
+    split = "train" if i==0 else "test"
+    labelList = labelTrainList if i==0 else labelTestList
+
+    infoClasse = {"samples" : 0, "pourcent" : 0}
+    infoClasse["samples"] = labelList.count(classe)
+    infoClasse["pourcent"] = infoClasse["samples"] / len(labelList)
+    infoDico[classe] = infoClasse
+
+  
+  print(split+":", infoDico)
 
 
 # ____________________MODELES_CREATION____________
@@ -132,6 +133,8 @@ for model_name, model in models :
     performances[model_name] = perfModel
 
 # Show performance of all models
+print("Models performances :\n")
+
 accuracyList = []
 
 for model in performances.keys():
