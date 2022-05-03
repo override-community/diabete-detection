@@ -84,9 +84,7 @@ for i in range(0,2): # For Train / Test
     infoClasse["pourcent"] = infoClasse["samples"] / len(labelList)
     infoDico[classe] = infoClasse
 
-  
   print(split+":", infoDico)
-
 
 # ____________________MODELES_CREATION____________
 # let's use basics models withouts any parameters befor moving to advanced machine learnin in order to tune them.
