@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head> <link rel="stylesheet" type="text/css" href="https://github.com/Fab16BSB/DiabeteDetection/blob/8212df3f67bdc510b3b5a1e1493839930f8dac1f/style.css"> </head>
 
+<html>
 <h1 align="center"> Introduction au machine learning : détection du diabète </h1>
 
 <h3 align="center"> LANGUES : [ENGLISH] / [ESPAÑOL] </h3>
@@ -36,3 +37,4 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 <a href="https://discord.gg/pgEUk9xVKe"> <image src="Ressource/discord_icon.png" width=50 height=50> </a>
 <a href ="" > <image src="Ressource/medium_icon.png" width=50 height=50> </a>
 <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> <image src="Ressource/youtube_icon.png" width=50 height=50> </a>
+</html>
