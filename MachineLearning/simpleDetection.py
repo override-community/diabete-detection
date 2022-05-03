@@ -36,8 +36,11 @@ print("Data lenght after cleaning :", len(df), "\n")
 
 #_______________DATA_REPARTITION_____________
 # Features and labels separation (Generaly features are call X and labels Y)
+
+# delete labels columns of feature variables
 features = df.copy()
-del features["Outcome"] # delete labels columns of feature variables
+del features["Outcome"] 
+
 print("Available features: ", features.shape[1])
 labels = df["Outcome"]
 
