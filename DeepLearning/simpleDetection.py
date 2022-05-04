@@ -60,21 +60,28 @@ print("Data Repartition :", dataRepartition, "\n")
 
 
 #_______________DATA_SEPARATION_____________
-# Split the dataset into 2 sets : train (70%) / test (30%)
-featureTrain, featureTest, labelTrain, labelTest = train_test_split (features, labels, test_size = 0.30, random_state = 42)
-
-trainRepartition = {}
-testRepartition = {}
+# Split the dataset into 2 sets : train (80%) / test (20%)
+featureTrain, featureTest, labelTrain, labelTest = train_test_split (features, labels, test_size = 0.20, random_state = 42)
 
 labelTrainList = list(labelTrain.values)
 labelTestList = list(labelTest.values)
 
-for classe in set(labels):
-  trainRepartition[classe] = labelTrainList.count(classe)
-  testRepartition[classe] = labelTestList.count(classe)
+print("Data Repartition after split :")
+for i in range(0,2): # For Train / Test
 
-print("Data Repartition after split :\ntrain :", trainRepartition, "\ntest :", testRepartition, "\n")
+  infoDico = {}
 
+  for classe in set(labels): # For each class
+
+    split = "train" if i==0 else "test"
+    labelList = labelTrainList if i==0 else labelTestList
+
+    infoClasse = {"samples" : 0, "pourcent" : 0}
+    infoClasse["samples"] = labelList.count(classe)
+    infoClasse["pourcent"] = infoClasse["samples"] / len(labelList)
+    infoDico[classe] = infoClasse
+
+  print(split+":", infoDico)
 
 # ____________________MODELES_CREATION____________
 
