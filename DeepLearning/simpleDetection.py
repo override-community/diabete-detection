@@ -18,8 +18,12 @@ import  pickle
 
 #_______________LOAD_DATA_____________
 # Load dataset to DataFrame
-df = pd.read_csv("Pima_Indians_Diabetes.csv")
+github_path = "/workspaces/DiabeteDetection/Datasets/Pima_Indians_Diabetes.csv"
+local_path = "../Datasets/Pima_Indians_Diabetes.csv"
+
+df = pd.read_csv(github_path)
 print("Columns : ", list(df.columns), "\n")
+print(df.info(), "\n")
 print("Example :\n", df.head, "\n")
 print("Total data lenght :", len(df))
 
@@ -32,12 +36,15 @@ print("Data lenght after cleaning :", len(df), "\n")
 
 #_______________DATA_REPARTITION_____________
 # Features and labels separation (Generaly features are call X and labels Y)
-features = df.copy()
-del features["Outcome"] # delete labels collumns of feature var
 
+# delete labels columns of feature variables
+features = df.copy()
+del features["Outcome"]
+
+print("Available features: ", features.shape[1])
 labels = df["Outcome"]
 
-# Count number of classes
+# Count of classe in target variable
 nbClasse = len(set(labels))
 print("Available classes :", nbClasse, "->", set(labels))
 
