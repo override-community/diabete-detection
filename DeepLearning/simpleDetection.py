@@ -114,9 +114,9 @@ model.compile(optimizer='rmsprop', loss='mse')
 # Fit the model with the train features and train labels
 # batch_size represente the number of sample it will see at the same time
 # epochs represente the number of time he will see all data
-model.fit(featureTrain,labelTrain,batch_size=32,epochs=3)
+model.fit(featureTrain,labelTrain,batch_size=32,epochs=25)
 
-# Predict all data
+# Predict all test data
 prediction = model.predict(featureTest)
 
 # Take the best classe (hight score) for all prediction
@@ -135,3 +135,10 @@ recall = recall_score(bestPred, labelTest)
 f1Score = f1_score(bestPred, labelTest)
 
 print("\nAccuracy:", acc*100, "\nPrecision :", precision*100, "\nRecall", recall*100, "\nF1 score", f1Score*100)
+
+#____________________SAVE____________
+with open("deepModel.pkl", 'wb')  as saveFile:
+    pickle.dump(model,  saveFile)
+  
+#____________________LOAD____________
+# pickle.load("name_of_your_file.pkl")
