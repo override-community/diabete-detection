@@ -30,19 +30,19 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 
 </ul>
 
-<h2><u> Dataset : </h2></u>
+<h2><u> Jeu de données / Dataset : </h2></u>
   Le jeu de données est un fichier CSV contenant 769 lignes.<br>
-  Chacune de ces lignes correspond à un patient atteint ou non du diabètes.<br><br>
-  La colonne "Outome" correspond au étiquette / label, elle indique donc si le patient à le diabète ou non.
-  Si c'est le cas la valeur sera de 1 sinon de 0.<br><br>
-  Les 8 autres colonnes : [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age] font office de caractéristiques aidant à établir une prediction.
+  Chacune de ces lignes correspond à un patient atteint ou non du diabète.<br><br>
+  La colonne "Outome" correspond aux étiquettes / labels, elle indique donc si le patient à ou non le diabète.
+  Si c'est le cas, la valeur sera de 1 sinon de 0.<br><br>
+  Les 8 autres colonnes : [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age] font office de caractéristiques aidant à établir une prédiction.
 
 
   
   
-<h2><u> Installation / Execution : </h2></u>
+<h2><u> Installation / Exécution : </h2></u>
   <h3> Installation </h3>
-    Choisissez votre méthode de résolution "Machine learning" ou "Deep learning" et installer les dépendances necessaire : </br>
+    Choisissez votre méthode de résolution "Machine learning" ou "Deep learning" et installer les dépendances nécessaire : </br>
 
     cd MachineLearning 
     pip install -r requirement.txt 
@@ -51,12 +51,12 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
     pip install -r requirement.txt
    
   <h3> Exécution </h3>
-    Après installation éditer le fichier SimpleDetection et changer le chemin vers le jeux données, puis executer le code python. <br>
+    Après installation éditer le fichier SimpleDetection et changer le chemin vers le jeu données, puis exécuter le code python. <br>
     
     # Éditez Ligne 24
     df = pd.read_csv(github_path)
 
-    # Exécuter
+    # Exécuter le code
     python simpleDetection.py
 
 
