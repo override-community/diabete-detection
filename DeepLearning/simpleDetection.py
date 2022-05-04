@@ -96,12 +96,12 @@ print("Number of feature for a sample", nbFeature)
 model = Sequential() 
 
 # add input layer
-# dense = vote layer
+# dense / full connected
 # 12 are the number of neurons
 # input_dim = number of feature for a sample
 model.add(Dense(12, activation = 'relu', input_dim = nbFeature)) 
           
-# add vote layer          
+# add hidden layer dense / full connected               
 model.add(Dense(8, activation = 'relu'))
           
 # add output layer
