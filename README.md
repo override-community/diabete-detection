@@ -31,8 +31,8 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 </ul>
 
 <h2><u> Installation / Execution : </h2></u>
-  <h3> Installation </h3>
-    <p>Choisissez votre méthode de résolution Machine learning ou Deep learning et installer les dépendances necessaire : </p>
+<h3> Installation </h3>
+Choisissez votre méthode de résolution Machine learning ou Deep learning et installer les dépendances necessaire : </br>
 ```
 cd MachineLearning 
 pip install -r requirement.txt 
