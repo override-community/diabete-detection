@@ -46,7 +46,6 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
     Après installation changer le chemin vers le jeux données puis executer le code python. <br>
     
 ```python
-  
 L.24  df = pd.read_csv(github_path)
 
 python simpleDetection.py
