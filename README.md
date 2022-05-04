@@ -48,7 +48,7 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
     python simpleDetection.py
 
 
-<h2><u> Source : </h2></u>
+<h2><u> Sources : </h2></u>
 Jeux de données : <a href ="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database"> https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database </a> <br>
 Kaggle : <a href ="https://www.kaggle.com"> https://www.kaggle.com </a>
   
