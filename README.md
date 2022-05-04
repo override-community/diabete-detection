@@ -31,9 +31,13 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 </ul>
 
 <h2><u> Installation / Execution : </h2></u>
+
+<h2><u> Source : </h2></u>
+Jeux de données : <a href ="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database"> https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database </a>
+Kaggle : <a href ="https://www.kaggle.com">"https://www.kaggle.com"</a>
   
 <h2><u> Réseaux : </h2></u>
-<a href="https://discord.gg/pgEUk9xVKe"> <image src="Ressource/discord_icon.png" width=50 height=50> </a>
-<a href ="" > <image src="Ressource/medium_icon.png" width=50 height=50> </a>
-<a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> <image src="Ressource/youtube_icon.png" width=50 height=50> </a>
+<image src="Ressource/discord_icon.png" width=25 height=25> <a href="https://discord.gg/pgEUk9xVKe"> https://discord.gg/pgEUk9xVKe </a>
+<image src="Ressource/medium_icon.png" width=25 height=25><a href ="" >  </a>
+<image src="Ressource/youtube_icon.png" width=25 height=25> <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A </a>
 </html>
