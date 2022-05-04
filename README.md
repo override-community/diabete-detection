@@ -34,10 +34,10 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
   <h3> Installation </h3>
     <p>Choisissez votre méthode de résolution Machine learning ou Deep learning et installer les dépendances necessaire : </p>
   <code>
-  cd MachineLearning
-  pip install -r requirement.txt
+  cd MachineLearning <br>
+  pip install -r requirement.txt <br><br>
 
-  cd DeepLearning
+  cd DeepLearning <br>
   pip install -r requirement.txt
   </code>
    
@@ -45,6 +45,12 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
   <h3> Exécution </h3>
     Après installation changer le chemin vers le jeux données puis executer le code python. <br>
     
+```python
+  
+L.24  df = pd.read_csv(github_path)
+
+python simpleDetection.py
+```
 
 <h2><u> Source : </h2></u>
 Jeux de données : <a href ="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database"> https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database </a> <br>
