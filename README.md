@@ -31,10 +31,10 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 </ul>
 
 <h2><u> Dataset : </h2></u>
-  Le jeu de données est un fichier CSV contenant 769 lignes.
-  Chacune de ces lignes correspond à un patient atteint ou non du diabètes.
+  Le jeu de données est un fichier CSV contenant 769 lignes.<br>
+  Chacune de ces lignes correspond à un patient atteint ou non du diabètes.<br><br>
   La colonne "Outome" correspond au étiquette / label, elle indique donc si le patient à le diabète ou non.
-  Si c'est le cas la valeur sera de 1 sinon de 0.
+  Si c'est le cas la valeur sera de 1 sinon de 0.<br><br>
   Les 8 autres colonnes : [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age] font office de caractéristiques aidant à établir une prediction.
 
 
