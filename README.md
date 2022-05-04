@@ -34,7 +34,7 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 
 <h2><u> Source : </h2></u>
 Jeux de données : <a href ="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database"> https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database </a> <br>
-Kaggle : <a href ="https://www.kaggle.com">"https://www.kaggle.com"</a>
+Kaggle : <a href ="https://www.kaggle.com"> https://www.kaggle.com </a>
   
 <h2><u> Réseaux : </h2></u>
 <p> <image src="Ressource/discord_icon.png" width=25 height=25> <a href="https://discord.gg/pgEUk9xVKe"> https://discord.gg/pgEUk9xVKe </a> </p>
