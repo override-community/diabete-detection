@@ -31,6 +31,14 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 </ul>
 
 <h2><u> Dataset : </h2></u>
+  Le jeu de données est un fichier CSV contenant 769 lignes.
+  Chacune de ces lignes correspond à un patient atteint ou non du diabètes.
+  La colonne "Outome" correspond au étiquette / label, elle indique donc si le patient à le diabète ou non.
+  Si c'est le cas la valeur sera de 1 sinon de 0.
+  Les 8 autres colonnes : [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age] font office de caractéristiques aidant à établir une prediction.
+
+
+  
   
 <h2><u> Installation / Execution : </h2></u>
   <h3> Installation </h3>
@@ -45,7 +53,7 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
   <h3> Exécution </h3>
     Après installation éditer le fichier SimpleDetection et changer le chemin vers le jeux données, puis executer le code python. <br>
     
-    # Éditez L.24
+    # Éditez Ligne 24
     df = pd.read_csv(github_path)
 
     # Exécuter
