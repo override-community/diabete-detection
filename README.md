@@ -5,7 +5,8 @@
 
 <h3 align="center"> LANGUES : [ENGLISH] / [ESPAÑOL] </h3>
 
-
+<h2><u> News : </u></h2>
+  
 <h2><u> Contexte : </u></h2>
 Niveau : <image src="Ressource/easy_lvl.png" width=100>
 
