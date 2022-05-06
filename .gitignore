@@ -1,3 +1,7 @@
 .venv/
 .venv/*
 *.pkl
+
+# folders
+./MachineLearning/avancedDetection.py
+./DeepLearning/avancedDetection.py
