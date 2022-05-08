@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 
 <html>
-<h1 align="center"> Introduction to machine learning: diabetes detection </h1>
+<h1 align="center"> Introduction à l'apprentissage automatique : détection du diabète </h1>
 <h3 align="center"> LANGUAGES : <a href ="https://github.com/override-community/diabete-detection/blob/main/README.md"> :us: ENGLISH</a> / <a href ="https://github.com/override-community/diabete-detection/blob/main/README.es.md"> :es: ESPAÑOL</a> </h3>
 <h2><u> News : </u></h2>
   
