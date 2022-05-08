@@ -3,7 +3,7 @@
 <html>
 <h1 align="center"> Introduction to machine learning: diabetes detection </h1>
 
-<h3 align="center"> LANGUES : [ENGLISH] / [ESPAÑOL] </h3>
+<h3 align="center"> LANGUES : [FRENCH] / [ESPAÑOL] </h3>
 
 <h2><u> News : </u></h2>
   
