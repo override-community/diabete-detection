@@ -6,7 +6,7 @@
 ![machine: learning](https://img.shields.io/badge/machine-learning-blue)
 ![python: 3.7](https://img.shields.io/badge/python-3.7-blue)
 ![Stars](https://img.shields.io/github/stars/override-community/diabete-detection?color=orange)
-
+![Fork](https://img.shields.io/github/forks/override-community/diabete-detection?color=orange)
 <!DOCTYPE html>
 
 <html>
