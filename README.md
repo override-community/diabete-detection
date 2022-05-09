@@ -16,7 +16,7 @@
 <h1 align="center"> Introduction to machine learning: diabetes detection </h1>
 <h3 align="center"> LANGUAGES : <a href ="https://github.com/override-community/diabete-detection/blob/main/README.fr.md"> FRENCH</a> / <a href ="https://github.com/override-community/diabete-detection/blob/main/README.es.md"> ESPAÑOL</a> </h3>
   
-<h2><u> Contexte : </u></h2>
+<h2><u> Context : </u></h2>
 Level : <image src="Ressource/easy_lvl.png" width=100>
 
 This project aims to make you discover the field of machine learning through a simple exercise: the automatic detection of diabetes.
@@ -25,7 +25,7 @@ As this project is an introduction, you will find here only simple concepts and 
 So if you are already experienced in the field, don't hesitate to take a look at our other projects.
 
 
-<h2><u>Architecture du projet :</h2></u>
+<h2><u> Architecture :</h2></u>
 This project is composed of 3 folders and a Medium article <i>(here)</i> containing our approach and additional explanations on the field.
   
 <ul>
@@ -40,7 +40,7 @@ This project is composed of 3 folders and a Medium article <i>(here)</i> contain
 
 </ul>
 
-<h2><u> Jeu de données / Dataset : </h2></u>
+<h2><u> Dataset : </h2></u>
   The dataset is a CSV file containing 769 rows.<br>
   Each of these lines corresponds to a patient with or without diabetes.<br><br>
   The column "Outome" corresponds to the labels, so it indicates if the patient has diabetes `valued 1` or not `valued 0`.
@@ -74,7 +74,7 @@ This project is composed of 3 folders and a Medium article <i>(here)</i> contain
 Jeux de données : <a href ="https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database"> https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database </a> <br>
 Kaggle : <a href ="https://www.kaggle.com"> https://www.kaggle.com </a>
   
-<h2><u> Réseaux : </h2></u>
+<h2><u> Networks : </h2></u>
 <p> <image src="Ressource/discord_icon.png" width=25 height=25> <a href="https://discord.gg/pgEUk9xVKe"> Discord @verride </a> </p>
 <p> <image src="Ressource/medium_icon.png" width=25 height=25> <a href ="https://medium.com/@overridecommunuty" > @overridecommunuty </a> </p>
 <p> <image src="Ressource/youtube_icon.png" width=25 height=25> <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> Youtube Fab.16 chanel </a> </p>
