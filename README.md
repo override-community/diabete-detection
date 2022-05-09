@@ -2,6 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/Licence-MIT-green)
 ![dependencies: latest](https://img.shields.io/badge/dependencies-latest-brightgreen)
+![deep: learning](https://img.shields.io/badge/deep-learning-blue)
 
 <!DOCTYPE html>
 
