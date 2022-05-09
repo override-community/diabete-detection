@@ -22,7 +22,7 @@ Level : <image src="Ressource/easy_lvl.png" width=100>
 This project aims to make you discover the field of machine learning through a simple exercise: the automatic detection of diabetes.
 It is therefore dedicated to beginners and to anyone who wants to discover this field.
 As this project is an introduction, you will find here only simple concepts and the bare minimum.
-So if you are already experienced in the field, don't hesitate to have a look at our other projects.
+So if you are already experienced in the field, don't hesitate to take a look at our other projects.
 
 
 <h2><u>Architecture du projet :</h2></u>
