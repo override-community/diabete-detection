@@ -4,6 +4,7 @@
 ![dependencies: latest](https://img.shields.io/badge/dependencies-latest-brightgreen)
 ![deep: learning](https://img.shields.io/badge/deep-learning-orange)
 ![machine: learning](https://img.shields.io/badge/machine-learning-orange)
+![python: 3.7](https://img.shields.io/badge/python-3.7-orange)
 
 <!DOCTYPE html>
 
