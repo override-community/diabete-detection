@@ -37,7 +37,7 @@ Este proyecto consta de 3 carpetas y un artículo Medium <i>(disponible aquí)</
 <h2><u> Conjunto de datos / Dataset: </h2></u>
   El conjunto de datos es un archivo CSV que contiene 769 líneas.<br>
   Cada una de estas líneas corresponde a un paciente con o sin diabetes.<br><br>
-  La columna "Resultado" corresponde a etiquetas / lables, por lo que indica si el paciente tiene o no diabetes.
+  La columna "Outcome" corresponde a etiquetas / lables, por lo que indica si el paciente tiene o no diabetes.
   Si es así, el valor será 1, a lo contrario de 0.<br><br>
   Las otras 8 columnas: [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age] actúan como características que ayudan a establecer una predicción.
   
