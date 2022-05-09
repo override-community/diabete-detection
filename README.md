@@ -60,7 +60,7 @@ This project is composed of 3 folders and a Medium article <i>(here)</i> contain
     cd DeepLearning 
     pip install -r requirement.txt
    
-  <h3> Exécution </h3>
+  <h3> Execution </h3>
     After installation edit the SimpleDetection file and change the path to the dataset, then run the python code. <br>
     
     # Éditez Ligne 24
