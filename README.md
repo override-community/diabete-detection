@@ -14,7 +14,7 @@
 
 <html>
 <h1 align="center"> Introduction to machine learning: diabetes detection </h1>
-<h3 align="center"> LANGUAGES : <a href ="https://github.com/override-community/diabete-detection/blob/main/README.fr.md"> :fr: FRENCH</a> / <a href ="https://github.com/override-community/diabete-detection/blob/main/README.es.md"> :es: ESPAÑOL</a> </h3>
+<h3 align="center"> LANGUAGES : <a href ="https://github.com/override-community/diabete-detection/blob/main/README.fr.md"> FRENCH</a> / <a href ="https://github.com/override-community/diabete-detection/blob/main/README.es.md"> ESPAÑOL</a> </h3>
   
 <h2><u> Contexte : </u></h2>
 Level : <image src="Ressource/easy_lvl.png" width=100>
@@ -77,5 +77,5 @@ Kaggle : <a href ="https://www.kaggle.com"> https://www.kaggle.com </a>
 <h2><u> Réseaux : </h2></u>
 <p> <image src="Ressource/discord_icon.png" width=25 height=25> <a href="https://discord.gg/pgEUk9xVKe"> Discord @verride </a> </p>
 <p> <image src="Ressource/medium_icon.png" width=25 height=25> <a href ="https://medium.com/@overridecommunuty" > @overridecommunuty </a> </p>
-<p> <image src="Ressource/youtube_icon.png" width=25 height=25> <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> Youtube override-communuty </a> </p>
+<p> <image src="Ressource/youtube_icon.png" width=25 height=25> <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> Youtube Fab.16 chanel </a> </p>
 </html>
