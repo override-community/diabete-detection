@@ -1,11 +1,18 @@
 ![License: MIT](https://img.shields.io/badge/Licence-MIT-green)
 ![dependencies: latest](https://img.shields.io/badge/dependencies-latest-brightgreen)
+![deep: learning](https://img.shields.io/badge/deep-learning-blue)
+![machine: learning](https://img.shields.io/badge/machine-learning-blue)
+![python: 3.7](https://img.shields.io/badge/python-3.7-blue)
+![Contributors](https://img.shields.io/badge/contributor-2-orange)
+![Stars](https://img.shields.io/github/stars/override-community/diabete-detection?color=orange)
+![Fork](https://img.shields.io/github/forks/override-community/diabete-detection?color=orange)
+![Watchers](https://img.shields.io/github/watchers/override-community/diabete-detection?color=orange)
 
 <!DOCTYPE html>
 
 <html>
 <h1 align="center"> Introducción al aprendizaje automático: detección de la diabetes</h1>
-<h3 align="center"> LANGUAGES : <a href ="https://github.com/override-community/diabete-detection/blob/main/README.fr.md"> :fr: FRENCH</a> / <a href ="https://github.com/override-community/diabete-detection/blob/main/README.es.md"> :us: ENGLISH</a> </h3>
+<h3 align="center"> LANGUAGES : <a href ="https://github.com/override-community/diabete-detection/blob/main/README.fr.md"> FRENCH</a> / <a href ="https://github.com/override-community/diabete-detection/blob/main/README.es.md"> ENGLISH</a> </h3>
   
 <h2><u> Contexto : </u></h2>
 Nivel : <image src="Ressource/easy_lvl.png" width=100>
@@ -31,5 +38,5 @@ Kaggle : <a href ="https://www.kaggle.com"> https://www.kaggle.com </a>
 <h2><u> Réseaux : </h2></u>
 <p> <image src="Ressource/discord_icon.png" width=25 height=25> <a href="https://discord.gg/pgEUk9xVKe"> Discord @verride </a> </p>
 <p> <image src="Ressource/medium_icon.png" width=25 height=25> <a href ="https://medium.com/@overridecommunuty" > @overridecommunuty </a> </p>
-<p> <image src="Ressource/youtube_icon.png" width=25 height=25> <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> Youtube override-communuty </a> </p>
+<p> <image src="Ressource/youtube_icon.png" width=25 height=25> <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> Youtube Fab.16 chanel </a> </p>
 </html>
