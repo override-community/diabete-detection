@@ -8,7 +8,7 @@
 ![Stars](https://img.shields.io/github/stars/override-community/diabete-detection?color=orange)
 ![Fork](https://img.shields.io/github/forks/override-community/diabete-detection?color=orange)
 ![Watchers](https://img.shields.io/github/watchers/override-community/diabete-detection?color=orange)
-![Image des contributeurs GitHub](https://contrib.rocks/image?repo=override-community/diabete-detection)
+![Image des contributeurs GitHub](https://img.shields.io/github/contributor/override-community/diabete-detection)
 
 <!DOCTYPE html>
 
