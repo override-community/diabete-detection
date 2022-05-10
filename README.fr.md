@@ -26,9 +26,9 @@ Il est donc dédié aux débutants et à toute personne souhaitant découvrir ce
 Donc si jamais vous êtes déjà expérimenté dans le domaine, n'hésitez pas à jeter un œil à nos autres projets.
 
 <h2><u> Prérequis : </u></h2>
-  Ce projet peut aussi bien être réalisé sous Windows, MacOS ou Linux.<br>
-  De plus aucune carte GPU n'est necessaire.<br>
-  Concernant python vous n'avez pas non plus besoin d'être un expert de ce langage mais une base en programmation est quand même la bienvenue.<br>
+ Ce projet peut aussi bien être réalisé sous Windows, MacOS ou Linux.<br>
+ De plus, aucune carte GPU n'est nécessaire.<br>
+ Concernant python, vous n'avez pas non plus besoin d'être un expert de ce langage, mais une base en programmation est quand même la bienvenue.<br>
 
 <h2><u>Architecture du projet :</h2></u>
 Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> contenant notre démarche ainsi que des explications supplémentaires sur le domaine. <br><br>
@@ -48,7 +48,7 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
 <h2><u> Jeu de données / Dataset : </h2></u>
   Le jeu de données est un fichier CSV contenant 769 lignes.<br>
   Chacune de ces lignes correspond à un patient atteint ou non du diabète.<br><br>
-  La colonne "Outome" correspond aux étiquettes / labels, elle indique donc si le patient à ou non le diabète.
+  La colonne "Outome" correspond aux étiquettes / labels, elle indique donc si le patient a ou non le diabète.
   Si c'est le cas, la valeur sera de 1 sinon de 0.<br><br>
   Les 8 autres colonnes : [Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age] font office de caractéristiques aidant à établir une prédiction.
 
@@ -57,7 +57,7 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
   
 <h2><u> Installation / Exécution : </h2></u>
   <h3> Installation </h3>
-    Choisissez votre méthode de résolution "Machine learning" ou "Deep learning" et installer les dépendances nécessaire : </br>
+    Choisissez votre méthode de résolution "Machine learning" ou "Deep learning" et installez les dépendances nécessaires : </br>
 
     cd MachineLearning 
     pip install -r requirement.txt 
@@ -66,9 +66,9 @@ Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> c
     pip install -r requirement.txt
    
   <h3> Exécution </h3>
-    Après installation éditer le fichier SimpleDetection et changer le chemin vers le jeu données, puis exécuter le code python. <br>
+    Après l'installation, éditez le fichier SimpleDetection et changez le chemin vers le jeu données, puis exécutez le code python. <br>
     
-    # Éditez Ligne 24
+    # Éditer Ligne 24
     df = pd.read_csv(github_path)
 
     # Exécuter le code
