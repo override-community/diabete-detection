@@ -24,6 +24,10 @@ Il est donc dédié aux débutants et à toute personne souhaitant découvrir ce
 Étant donné que ce projet fait office d'introduction, vous ne trouvez ici que des concepts simples ainsi que le strict minimum.
 Donc si jamais vous êtes déjà expérimenté dans le domaine, n'hésitez pas à jeter un œil à nos autres projets.
 
+<h2><u> Prérequis : </u></h2>
+  Ce projet peut aussi bien être réalisé sous Windows, MacOS ou Linux.
+  De plus aucune carte GPU n'est necessaire.
+  Concernant python vous n'avez pas non plus besoin d'être un expert de ce langage mais une base en python ou en programmation est quand même la bienvenue.
 
 <h2><u>Architecture du projet :</h2></u>
 Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> contenant notre démarche ainsi que des explications supplémentaires sur le domaine. <br><br>
