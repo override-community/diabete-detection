@@ -3,6 +3,7 @@
 ![deep: learning](https://img.shields.io/badge/deep-learning-blue)
 ![machine: learning](https://img.shields.io/badge/machine-learning-blue)
 ![python: 3.7](https://img.shields.io/badge/python-3.7-blue)
+![GPU: Off](https://img.shields.io/badge/GPU-Off-purple)
 ![Contributors](https://img.shields.io/badge/contributor-2-orange)
 ![Stars](https://img.shields.io/github/stars/override-community/diabete-detection?color=orange)
 ![Fork](https://img.shields.io/github/forks/override-community/diabete-detection?color=orange)
@@ -19,6 +20,11 @@ Nivel : <image src="Ressource/easy_lvl.png" width=100>
 
 Este proyecto pretende introducirte al aprendizaje automático a través de un sencillo ejercicio: la detección automática del diabetes.
 Por lo tanto, está dedicado a los principiantes y a cualquiera que quiera descubrir este tema. Como este proyecto es una introducción, aquí sólo encontrarás conceptos sencillos y lo mínimo. Así que si ya tiene experiencia en este tema, eche un vistazo a nuestros otros proyectos.
+  
+<h2><u> Requisito: <h2><u>
+Este proyecto se puede realizar en Windows, MacOS o Linux. <br>
+Además, no se requiere una tarjeta GPU. <br>
+En cuanto a python, no es necesario ser un experto en este lenguaje, pero se requiere una experiencia minima en programación. <br>
   
 <h2><u>Arquitectura del proyecto :</h2></u>
 Este proyecto consta de 3 carpetas y un artículo Medium <i>(disponible aquí)</i> que contiene nuestro enfoque y otras explicaciones sobre el tema. <br><br>
