@@ -21,7 +21,7 @@ Nivel : <image src="Ressource/easy_lvl.png" width=100>
 Este proyecto pretende introducirte al aprendizaje automático a través de un sencillo ejercicio: la detección automática del diabetes.
 Por lo tanto, está dedicado a los principiantes y a cualquiera que quiera descubrir este tema. Como este proyecto es una introducción, aquí sólo encontrarás conceptos sencillos y lo mínimo. Así que si ya tiene experiencia en este tema, eche un vistazo a nuestros otros proyectos.
   
-<h2><u> Requisito: <h2><u>
+<h2><u> Requisito: </h2></u>
 Este proyecto se puede realizar en Windows, MacOS o Linux. <br>
 Además, no se requiere una tarjeta GPU. <br>
 En cuanto a python, no es necesario ser un experto en este lenguaje, pero se requiere una experiencia minima en programación. <br>
