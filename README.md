@@ -28,7 +28,7 @@ So if you are already experienced in the field, don't hesitate to take a look at
 <h2><u> Prerequisite: </u></h2>
 This project can be perform on Windows, MacOS or Linux. <br>
 Moreover, no GPU card is required. <br>
-Concerning python you don't need to be an expert of this language but a programming background is required. <br>
+Concerning python you don't need to be an expert of this language but a minimal programming background is required. <br>
 
 <h2><u> Architecture :</h2></u>
 This project is composed of 3 folders and a Medium article <i>(here)</i> containing our approach and additional explanations on the field.
