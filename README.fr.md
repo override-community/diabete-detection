@@ -5,6 +5,7 @@
 ![deep: learning](https://img.shields.io/badge/deep-learning-blue)
 ![machine: learning](https://img.shields.io/badge/machine-learning-blue)
 ![python: 3.7](https://img.shields.io/badge/python-3.7-blue)
+![GPU : Off](https://img.shields.io/badge/GPU-Off-purple)
 ![Contributors](https://img.shields.io/badge/contributor-2-orange)
 ![Stars](https://img.shields.io/github/stars/override-community/diabete-detection?color=orange)
 ![Fork](https://img.shields.io/github/forks/override-community/diabete-detection?color=orange)
@@ -27,7 +28,7 @@ Donc si jamais vous êtes déjà expérimenté dans le domaine, n'hésitez pas �
 <h2><u> Prérequis : </u></h2>
   Ce projet peut aussi bien être réalisé sous Windows, MacOS ou Linux.<br>
   De plus aucune carte GPU n'est necessaire.<br>
-  Concernant python vous n'avez pas non plus besoin d'être un expert de ce langage mais une base en python ou en programmation est quand même la bienvenue.<br>
+  Concernant python vous n'avez pas non plus besoin d'être un expert de ce langage mais une base en programmation est quand même la bienvenue.<br>
 
 <h2><u>Architecture du projet :</h2></u>
 Ce projet est composé de 3 dossiers et d'un article Medium <i>(dispo ici)</i> contenant notre démarche ainsi que des explications supplémentaires sur le domaine. <br><br>
