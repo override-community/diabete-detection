@@ -5,7 +5,7 @@
 ![deep: learning](https://img.shields.io/badge/deep-learning-blue)
 ![machine: learning](https://img.shields.io/badge/machine-learning-blue)
 ![python: 3.7](https://img.shields.io/badge/python-3.7-blue)
-![GPU : Off](https://img.shields.io/badge//GPU-off-purple)
+![GPU : Off](https://img.shields.io/badge/GPU-Off-purple)
 ![Contributors](https://img.shields.io/badge/contributor-2-orange)
 ![Stars](https://img.shields.io/github/stars/override-community/diabete-detection?color=orange)
 ![Fork](https://img.shields.io/github/forks/override-community/diabete-detection?color=orange)
