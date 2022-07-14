@@ -80,7 +80,9 @@ Jeux de données : <a href ="https://www.kaggle.com/datasets/uciml/pima-indians-
 Kaggle : <a href ="https://www.kaggle.com"> https://www.kaggle.com </a>
   
 <h2><u> Networks : </h2></u>
-<p> <image src="Ressource/discord_icon.png" width=25 height=25> <a href="https://discord.gg/pgEUk9xVKe"> Discord @verride </a> </p>
-<p> <image src="Ressource/medium_icon.png" width=25 height=25> <a href ="https://medium.com/@overridecommunuty" > @overridecommunuty </a> </p>
-<p> <image src="Ressource/youtube_icon.png" width=25 height=25> <a href ="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A"> Youtube Fab.16 chanel </a> </p>
+  <p align="left">  
+    <a href="https://discord.gg/pgEUk9xVKe" target="blank"> <image align="center" src="Ressource/discord_icon.png" width=40 height=40>  </a>
+    <a href="https://medium.com/@overridecommunuty" target="blank"> <image align="center" src="Ressource/medium_icon.png" width=40 height=40> </a> 
+    <a href="https://www.youtube.com/channel/UCHS2xgITwh7olsnznmq8o0A" target="blank"> <image align="center" src="Ressource/youtube_icon.png" width=40 height=40> </a> 
+  </p>
 </html>
